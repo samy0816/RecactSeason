@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 60px;
+}
+
+.home-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.earth-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.earth {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.months-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+
+.month {
+  position: absolute;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.month.selected {
+  color: #ff0;
+  font-weight: bold;
+}
+
+.months-circle {
+  /* Add this to create a circle layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.month {
+  /* Update the month positioning to use CSS trigonometry */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.month:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translate(300px);
+}
+
+.month:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(30deg) translate(300px);
+}
+
+.month:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(60deg) translate(300px);
+}
+
+.month:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(90deg) translate(300px);
+}
+
+.month:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(120deg) translate(300px);
+}
+
+.month:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(150deg) translate(300px);
+}
+
+.month:nth-child(7) {
+  transform: translate(-50%, -50%) rotate(180deg) translate(300px);
+}
+
+.month:nth-child(8) {
+  transform: translate(-50%, -50%) rotate(210deg) translate(300px);
+}
+
+.month:nth-child(9) {
+  transform: translate(-50%, -50%) rotate(240deg) translate(300px);
+}
+
+.month:nth-child(10) {
+  transform: translate(-50%, -50%) rotate(270deg) translate(300px);
+}
+
+.month:nth-child(11) {
+  transform: translate(-50%, -50%) rotate(300deg) translate(300px);
+}
+
+.month:nth-child(12) {
+  transform: translate(-50%, -50%) rotate(330deg) translate(300px);
+}
+
+.selected-month {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  left:250px;
+  top:250px;
+}
